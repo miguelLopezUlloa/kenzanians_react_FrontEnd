@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import './styles/bootstrap.min.css';
 import Employees from './components/Employees'
 import Pagination from './components/Pagination'
+import Navbar from "./components/Navbar";
 
 class App extends Component {
 
     render() {
         return <div className="app container">
+
+            <Navbar/>
 
             <div className="jumbotron">
 
@@ -16,11 +19,11 @@ class App extends Component {
                 <div class="form-group has-success">
 
                     <label class="form-control-label" for="inputSuccess1">Name</label>
-                    <input type="text" value="correct value" class="form-control is-valid" id="inputValid1"/>
+                    <input type="text" value="Miguel" class="form-control is-valid" id="inputValid1"/>
                         <div class="valid-feedback">Success! You've done it.</div>
 
                     <label class="form-control-label" for="inputSuccess2">Last name</label>
-                    <input type="text" value="correct value" class="form-control is-valid" id="inputValid2"/>
+                    <input type="text" value="Lopez" class="form-control is-valid" id="inputValid2"/>
                         <div class="valid-feedback">Success! You've done it.</div>
 
                 </div>
